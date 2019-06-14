@@ -1,0 +1,23 @@
+!!!
+%html
+  %head
+    %link{:href => "https://fonts.googleapis.com/css?family=", :rel => "stylesheet", :type => "text/css"}/
+    %title Campadventure
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body
+    .row
+      .col-12
+        = render "layouts/nav"
+      .col-12
+        = render "layouts/notification_bar"
+    .row
+      .col-12
+        = yield
+  %footer
+    .row
+      .col-12
+        = render "layouts/footer"
+

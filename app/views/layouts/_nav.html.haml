@@ -1,0 +1,45 @@
+%nav.navbar.navbar-expand-xl.navbar-light.bg-light.nav-custom
+  %a.navbar-brand{:href => "/"}
+    .brand-custom-container
+      =image_tag("camp_adventure_logo.png", :height => "95", :width => "160", class:"brand-custom")
+  %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", :type => "button"}
+    %span.navbar-toggler-icon
+  #navbarSupportedContent.collapse.navbar-collapse
+    %ul.navbar-nav.ml-auto
+      %li.nav-item.dropdown
+        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+          LOCATIONS
+        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+          %a.dropdown-item{:href => "#"} HORSHAM, PA
+          %a.dropdown-item{:href => "#"} BOOTHWYN, PA
+          %a.dropdown-item{:href => "#"} MIDDLETOWN, DE
+      %li.nav-item.dropdown
+        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+          ABOUT
+        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+          =link_to "FAQS", faq_index_path, class: "dropdown-item"
+          %a.dropdown-item{:href => "faq"} FAQs
+          %a.dropdown-item{:href => "media"} MEDIA
+      %li.nav-item
+        %a.nav-link{:href=>"#"}
+          PHOTOS
+      %li.nav-item.dropdown
+        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+          GIFT CARDS
+        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+          %a.dropdown-item{:href => "#"} HORSHAM, PA
+          %a.dropdown-item{:href => "#"} BOOTHWYN, PA
+          %a.dropdown-item{:href => "#"} MIDDLETOWN, DE
+      %li.nav-item.dropdown
+        %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+          EXPERIENCES
+        .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+          %a.dropdown-item{:href => "#"} CORPORATE EVENTS
+          %a.dropdown-item{:href => "#"} LEAGUES
+          %a.dropdown-item{:href => "#"} PARTIES & EVENTS
+      %li.nav-item
+        %a.nav-link{:href=>"#"}
+          CONTACT US
+      %li.nav-item.book-now-custom.skew20
+        %a.nav-link{:href=>"#"}
+          BOOK NOW
