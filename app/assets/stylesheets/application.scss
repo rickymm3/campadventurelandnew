@@ -1,0 +1,322 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ 
+
+ */
+@import "bootstrap";
+@font-face {
+  font-family: "lowrider-bb-italic";
+  src: url(asset-path('lowrider-bb-italic.ttf')) format("truetype");
+}
+@font-face {
+  font-family: "roboto-condensed-regular";
+  src: url(asset-path('RobotoCondensed-Regular.ttf')) format("truetype");
+}
+	
+body {
+	overflow: scroll!important;
+	font-style:normal!important;
+}
+
+html, body {padding:0; margin:0;}
+
+.nav-custom {
+	background-color: #481771!important;
+	a {
+		color: white!important;
+	}
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+a.dropdown-item {
+	color: black!important;
+}
+
+.navbar {
+		position: relative;
+
+}
+
+h2 {
+	font-family: "lowrider-bb-italic", arial;
+	font-size: 40px;
+	color: #0e5ccc;
+}
+
+h3 {
+	font-family: "lowrider-bb-italic", arial;
+	font-size: 26px;
+	color: white;
+	margin-bottom: 0px;
+}
+
+p {
+	color:black;
+	font-family: "roboto-condensed-regular", sans-serif;
+	font-size: 16px;
+}
+
+.notification-bar {
+	background-color: #4fd5da;
+	height: auto;
+	font-size: 1.4vw;
+	padding: 5px 10px 5px 0px;
+}
+
+.color-1 {
+	color: #ed008c;
+}
+
+.color-2 {
+	color: #491771;
+}
+
+.brand-custom {
+	position:absolute;
+	top: 10px;
+	overflow: hidden;
+	z-index: 100;
+}
+
+.book-now-custom {
+	background-color: green;
+	padding-left: 15px;
+	text-align: center;
+}
+.button-custom {
+	display: table;
+	margin: 0 auto;
+	font-family: "roboto-condensed-regular", sans-serif;
+	font-size: 26px;
+	font-style: italic!important;
+}
+.learn-more-text {
+	background-color:#FF6E1E;
+	padding:10px 25px;
+	display: inline-block;
+	color:#491771;
+	border-right: 30px solid #ed008c;
+}
+
+.learn-more-extra {
+	background-color:#ed008c;
+	color:#ed008c;
+	display: inline-block;
+	width: 10px;
+	height: auto;
+}
+
+.skew20 {
+	transform: skew(-20deg);
+}
+
+.nav-item {
+	padding-right: 20px;
+}
+
+.banner-container {
+	position: relative;
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	background-image: image-url('home-bg.jpg');
+	background-size:cover;
+}
+
+.banner-image {
+	width: 100%;
+	padding: 0px;
+}
+
+.banner-trees {
+	position:absolute;
+	bottom:0px;
+	background-image: image-url('tan-trees.png');
+	position: relative;
+	background-repeat:repeat;
+	background-size:contain;
+	background-position:center;
+	background-size:cover;
+	height: 119px;
+}
+
+.choose-location {
+	display:inline-block;
+}
+
+.choose-location-container {
+	background-color: #FAD58C;
+	padding: 30px;
+}
+
+.banner-text {
+	padding: 80px 20px 20px 80px;
+}
+
+.shadow-effect {
+	color: white;
+	font-family: "lowrider-bb-italic", arial;
+	text-shadow: 10px -8px #481771, 16px -14px #4fd5da;
+}
+.line1 {
+font-size: 5vw; 
+}
+.line2, .line3 {
+	font-size: 8vw;
+}
+
+.what-is {
+	padding: 20px 0px;
+	background-color: #FAD58C;
+}
+
+.center-row {
+	width:100%;
+	margin: 0 auto;
+}
+
+.overflow-true {
+	overflow:visible;
+	z-index: 200;
+}
+
+.btn {
+	background-color: white;
+}
+
+.margin-left-small {
+}
+
+.badge-image {
+	height: 86px;
+	width: 91px;
+}
+
+.buy-location {
+	height: 220px;
+	background-color: #ed008c;
+	padding:0;
+	margin:0;
+	position: relative;
+}
+
+.buy-location-content {
+
+}
+
+.buy-location-trees {
+	position: absolute;
+	bottom:0;
+	background-image: image-url('trees_pink_sky.png');
+	background-repeat:repeat;
+	background-size:contain;
+	background-position:center;
+	background-size:cover;
+	height: 126px;
+	width: 100%;
+}
+
+.our-adventures {
+	background-color: white;
+}
+
+.our-adventures-third {
+	background-color:#FF6E1E;
+	padding: 0;
+}
+
+.our-adventures-border {
+	border-right: 7px solid white;
+}
+
+.fit {
+	max-width: 100%;
+}
+
+.our-adventures-padding {
+	padding: 0px 50px 20px 50px;
+}
+.our-adventures-perfect {
+	padding: 40px;
+}
+
+footer {
+	width: 100%;
+	height: 400px;
+	background-image: image-url('footer-background.png');
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
+	background-size:cover;
+	padding-top:20px;
+	position: relative;
+}
+
+.footer-logo {
+	width: 20%;
+}
+
+.copyright{
+	color:white;
+	font-size:12px;
+	bottom: 0;
+}
+
+.footer-links {
+	a {
+		color:white;
+	}
+	color: #FF6E1E;
+}
+
+.sep {
+	padding: 0px 20px;
+}
+
+@media (min-width: 1200px ) {
+		font-size: 2vw;
+}
+
+@media (max-width: 1200px) { 
+	nav {
+		min-height: 110px!important;
+	}
+	.navbar-brand {
+		display:none;
+	}
+	.navbar-nav {
+		margin-top: 40px;
+	}
+	.shadow-effect {
+		text-shadow: 8px -6px #481771, 14px -12px #4fd5da;
+	}
+}
+
+@media (max-width: 800px) {
+	.shadow-effect {
+		text-shadow: 4px -3px #481771, 6px -5px #4fd5da;
+	}
+	.what-is {
+		p {
+			font-size: 14px;
+		}
+		h2 {
+			font-size: 30px;
+		}
+	}
+	.badge-image {
+		height: 69px;
+		width: 72px;
+	}
+}
